@@ -1,0 +1,17 @@
+<div class="image-cropper">
+  <image-cropper 
+    [imageBase64]="imageBase64" 
+    [resizeToWidth]="128" 
+    [cropperStaticHeight]= "220"
+    [cropperStaticWidth]= "330" 
+    [aspectRatio]="1/1"
+    [roundCropper]="false" 
+    [maintainAspectRatio]="false" 
+    format="png" 
+    (imageCropped)="imageCropped($event)" 
+    (imageLoaded)="imageLoaded($event)" 
+    (cropperReady)="cropperReady()"
+    (loadImageFailed)="loadImageFailed()">
+  </image-cropper>
+  <!-- [aspectRatio]="4 / 3" -->
+</div>
