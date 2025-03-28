@@ -1,13 +1,13 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-/client/dist
+dist
 /client/tmp
 /client/out-tsc
 /client/bazel-out
 
 # Node
-/client/node_modules
+node_modules
 /client/npm-debug.log
 /client/yarn-error.log
 
@@ -43,5 +43,4 @@ Thumbs.db
 
 # Server Files
 /server/.env
-/server/node_modules
 /server/.vscode
