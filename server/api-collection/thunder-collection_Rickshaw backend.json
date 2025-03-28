@@ -1,0 +1,160 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Rickshaw backend",
+    "dateExported": "2024-01-26T06:02:50.486Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5af59d03-5170-4cac-8739-1374129abaef",
+            "colId": "4a03b0ea-2a82-49d7-ac0f-26ca0ef945f0",
+            "containerId": "",
+            "name": "homeDetails:Config",
+            "url": "localhost:5000/getHomeDetails",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-10T06:02:13.042Z",
+            "modified": "2024-01-14T06:26:48.466Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1da511ec-348c-4214-b22a-d9e1ad73a728",
+            "colId": "4a03b0ea-2a82-49d7-ac0f-26ca0ef945f0",
+            "containerId": "",
+            "name": "productConfig",
+            "url": "localhost:5000/getProductDetails",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-10T06:02:43.950Z",
+            "modified": "2024-01-25T16:59:54.252Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productID\":\"STR01\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "94956b08-6b09-4bae-9873-23c127742b16",
+            "colId": "4a03b0ea-2a82-49d7-ac0f-26ca0ef945f0",
+            "containerId": "",
+            "name": "get queries",
+            "url": "localhost:5000/getQuery",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2024-01-14T16:30:29.675Z",
+            "modified": "2024-01-25T17:13:56.116Z",
+            "headers": [
+                {
+                    "name": "authToken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDYyMDYzNDMsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA2MjAyNzQzfQ.KHUwUaRgDz2tDvgzxsX-KPlTGf7KXu00NN9EL9hsO6E.eyJleHAiOjE3MDUyNTk2MTgsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA1MjU2MDE4fQ.Nz38HKdZvwWhblG1JMWG5yGwH8W6B6e6bt2bgK7Sy5w"
+                }
+            ],
+            "params": [
+                {
+                    "name": "authToken",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4fe609db-f459-4695-894b-fde73fc64f10",
+            "colId": "4a03b0ea-2a82-49d7-ac0f-26ca0ef945f0",
+            "containerId": "",
+            "name": "get queries filter",
+            "url": "localhost:5000/getQuery",
+            "method": "POST",
+            "sortNum": 27500,
+            "created": "2024-01-25T17:11:47.922Z",
+            "modified": "2024-01-26T05:38:57.978Z",
+            "headers": [
+                {
+                    "name": "authtoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDYyMDc0MTYsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA2MjAzODE2fQ.9R-mWAl7aqEDpTiKSi9Mc7RuX8GlrlZHThHqT7A8F_w.eyJleHAiOjE3MDYyMDY0NTMsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA2MjAyODUzfQ.K9KH6PrNZtxsZeHJhkKLX1CfpiNrwrRnw7OKkvWvwBo.eyJleHAiOjE3MDYyMDYzNDMsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA2MjAyNzQzfQ.KHUwUaRgDz2tDvgzxsX-KPlTGf7KXu00NN9EL9hsO6E.eyJleHAiOjE3MDYyMDYzNDMsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA2MjAyNzQzfQ.KHUwUaRgDz2tDvgzxsX-KPlTGf7KXu00NN9EL9hsO6E.eyJleHAiOjE3MDYyMDYzNDMsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA2MjAyNzQzfQ.KHUwUaRgDz2tDvgzxsX-KPlTGf7KXu00NN9EL9hsO6E.eyJleHAiOjE3MDYyMDYzNDMsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA2MjAyNzQzfQ.KHUwUaRgDz2tDvgzxsX-KPlTGf7KXu00NN9EL9hsO6E.eyJleHAiOjE3MDUyNTk2MTgsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA1MjU2MDE4fQ.Nz38HKdZvwWhblG1JMWG5yGwH8W6B6e6bt2bgK7Sy5w"
+                }
+            ],
+            "params": [
+                {
+                    "name": "authToken",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"filter\":\"month\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDYyNTA2OTAsInVzZXJJRCI6IlNodWJoYXl1IiwiaWF0IjoxNzA2MjQ3MDkwfQ.zTVB36iSnc7CMCLwtu_41iTBYT1xokpv7iumJNW06Oc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "13ab7e1e-916b-4be3-9346-9cdb4bf6b704",
+            "colId": "4a03b0ea-2a82-49d7-ac0f-26ca0ef945f0",
+            "containerId": "",
+            "name": "sendQuery",
+            "url": "localhost:5000/createQuery",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-10T07:09:03.193Z",
+            "modified": "2024-01-26T05:35:33.904Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"queryID\":\"97c8efb1-8eb3-4289-b6f7-b8f29a71032e\",\n    \"queryPhone\":\"7003420196\",\n  \"queryEmail\":\"dasguptasubhayu@gmail.com\",\n  \"queryMessage\":\"I want to buy good toots\"\n  \n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bb63ae38-dabb-42ed-886b-7a9634b960c0",
+            "colId": "4a03b0ea-2a82-49d7-ac0f-26ca0ef945f0",
+            "containerId": "",
+            "name": "Auth",
+            "url": "localhost:5000/authenticate",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-14T17:46:59.192Z",
+            "modified": "2024-01-14T18:02:48.536Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"userID\":\"Shubhayu\",\n  \"password\":\"Kolkata@1\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "36a6d3b6-2907-4587-ae1f-312da1bb89e0",
+            "colId": "4a03b0ea-2a82-49d7-ac0f-26ca0ef945f0",
+            "containerId": "",
+            "name": "createModel",
+            "url": "localhost:5000/startAndCreateModels",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-25T16:37:45.370Z",
+            "modified": "2024-01-25T16:38:09.364Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

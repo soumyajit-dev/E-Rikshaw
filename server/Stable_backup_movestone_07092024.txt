@@ -1,0 +1,251 @@
+Stable_backup_movestone_07092024
+
+
+-- public."configProperties" definition
+
+-- Drop table
+
+-- DROP TABLE public."configProperties";
+
+CREATE TABLE public."configProperties" (
+	id serial4 NOT NULL,
+	"pageName" varchar(255) NOT NULL,
+	"sectionName" varchar(255) NOT NULL,
+	attribute1 varchar(255) NULL,
+	attribute2 varchar(255) NULL,
+	attribute3 varchar(255) NULL,
+	"createdAt" timestamptz NOT NULL,
+	"updatedAt" timestamptz NOT NULL,
+	CONSTRAINT "configProperties_pkey" PRIMARY KEY (id)
+);
+
+
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('home', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719644023/Movestone/Home%20page/Slider_1_ngblpg.jpg', NULL, NULL, '2024-06-29 14:29:05.433', '2024-06-29 14:29:05.433');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('home', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719644024/Movestone/Home%20page/Slider_2_atdkwv.jpg', NULL, NULL, '2024-06-29 14:29:05.433', '2024-06-29 14:29:05.433');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('home', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719644024/Movestone/Home%20page/Slider_3_oydwm1.jpg', NULL, NULL, '2024-06-29 14:29:05.433', '2024-06-29 14:29:05.433');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('home', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719644026/Movestone/Home%20page/Slider_4_nguptf.jpg', NULL, NULL, '2024-06-29 14:29:05.433', '2024-06-29 14:29:05.433');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('home', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719644027/Movestone/Home%20page/Slider_5_adural.jpg', NULL, NULL, '2024-06-29 14:29:05.433', '2024-06-29 14:29:05.433');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('products-loader', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719644027/Movestone/Home%20page/Slider_5_adural.jpg', NULL, NULL, '2024-08-04 11:41:59.546', '2024-08-04 11:41:59.546');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('about', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1722750908/Movestone/Products_new/banners/1_cnsyi8.jpg', NULL, NULL, '2024-08-04 11:31:54.547', '2024-08-04 11:31:54.547');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('services', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1722750909/Movestone/Products_new/banners/3_calkec.jpg', NULL, NULL, '2024-08-04 11:31:54.547', '2024-08-04 11:31:54.547');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('reviews', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1722750909/Movestone/Products_new/banners/2_v2xmxn.jpg', NULL, NULL, '2024-08-04 11:31:54.547', '2024-08-04 11:31:54.547');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('contact', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1722750945/Movestone/Products_new/banners/contact_slider_odgon9.jpg', NULL, NULL, '2024-08-04 11:36:46.022', '2024-08-04 11:36:46.022');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('products-eRikshaw', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719644024/Movestone/Home%20page/Slider_2_atdkwv.jpg', NULL, NULL, '2024-08-04 11:40:00.512', '2024-08-04 11:40:00.512');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('products-eRikshaw', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719644024/Movestone/Home%20page/Slider_3_oydwm1.jpg', NULL, NULL, '2024-08-04 11:40:00.512', '2024-08-04 11:40:00.512');
+INSERT INTO public."configProperties" ("pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt") VALUES('products-eRikshaw', 'banner', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719644026/Movestone/Home%20page/Slider_4_nguptf.jpg', NULL, NULL, '2024-08-04 11:40:00.512', '2024-08-04 11:40:00.512');
+
+INSERT INTO public."configProperties"
+(id, "pageName", "sectionName", attribute1, attribute2, attribute3, "createdAt", "updatedAt")
+VALUES(16, 'deleteProduct', 'secret', 'secretKey', NULL, NULL, '2024-09-07 12:47:26.484', '2024-09-07 12:47:26.484');
+
+
+
+-- public."Users" definition
+
+-- Drop table
+
+-- DROP TABLE public."Users";
+
+CREATE TABLE public."Users" (
+	id serial4 NOT NULL,
+	"userID" varchar(255) NOT NULL,
+	"password" varchar(255) NOT NULL,
+	email varchar(255) NOT NULL,
+	"createdAt" timestamptz NOT NULL,
+	"updatedAt" timestamptz NOT NULL,
+	CONSTRAINT "Users_email_key" UNIQUE (email),
+	CONSTRAINT "Users_pkey" PRIMARY KEY (id),
+	CONSTRAINT "Users_userID_key" UNIQUE ("userID")
+);
+
+
+INSERT INTO public."Users" ("userID", "password", email, "createdAt", "updatedAt") VALUES('soumyajitdev', 'soumyajitdev', 'soumyajit.9614@gmail.com', '2024-01-14 22:12:35.111', '2024-01-14 22:12:35.111');
+
+
+
+-- public."Testimonials" definition
+
+-- Drop table
+
+-- DROP TABLE public."Testimonials";
+
+CREATE TABLE public."Testimonials" (
+	id serial4 NOT NULL,
+	"testimonialID" varchar(255) NOT NULL,
+	testimonial varchar(255) NOT NULL,
+	"testimonialAuthor" varchar(255) NOT NULL,
+	stars varchar(255) NOT NULL,
+	"imageURL" varchar(255) NULL,
+	"createdAt" timestamptz NOT NULL,
+	"updatedAt" timestamptz NOT NULL,
+	CONSTRAINT "Testimonials_pkey" PRIMARY KEY (id),
+	CONSTRAINT "Testimonials_testimonialID_key" UNIQUE ("testimonialID")
+);
+
+
+
+INSERT INTO public."Testimonials" ("testimonialID", testimonial, "testimonialAuthor", stars, "imageURL", "createdAt", "updatedAt") VALUES('t4', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', 'Rashid khan', '4.5', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVxeGRsNcAl7AjWZelAt_Nx9T_F3RBnKH3EZZzTXfCRA&s', '2024-01-06 21:52:14.933', '2024-01-06 21:52:14.933');
+INSERT INTO public."Testimonials" ("testimonialID", testimonial, "testimonialAuthor", stars, "imageURL", "createdAt", "updatedAt") VALUES('t2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', 'Abbas khan', '4.5', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVxeGRsNcAl7AjWZelAt_Nx9T_F3RBnKH3EZZzTXfCRA&s', '2024-01-06 21:52:14.933', '2024-01-06 21:52:14.933');
+INSERT INTO public."Testimonials" ("testimonialID", testimonial, "testimonialAuthor", stars, "imageURL", "createdAt", "updatedAt") VALUES('t3', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', 'Abrahim khan', '4.5', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVxeGRsNcAl7AjWZelAt_Nx9T_F3RBnKH3EZZzTXfCRA&s', '2024-01-06 21:52:14.933', '2024-01-06 21:52:14.933');
+
+
+
+-- public."Queries" definition
+
+-- Drop table
+
+-- DROP TABLE public."Queries";
+
+CREATE TABLE public."Queries" (
+	"queryID" uuid NOT NULL,
+	"queryMessage" varchar(255) NOT NULL,
+	"queryPhone" varchar(255) NOT NULL,
+	"queryEmail" varchar(255) NOT NULL,
+	"forProduct" varchar(255) NULL,
+	"createdAt" timestamptz NOT NULL,
+	"updatedAt" timestamptz NOT NULL,
+	CONSTRAINT "Queries_pkey" PRIMARY KEY ("queryID")
+);
+
+
+
+INSERT INTO public."Queries" ("queryID", "queryMessage", "queryPhone", "queryEmail", "forProduct", "createdAt", "updatedAt") VALUES('69ea11e9-da47-414b-ba02-58a2f808faa2'::uuid, 'Message from Mr/Ms Shubhayu Dasgupta:  Hello testing', '7003420196', 'dasguptasubhayu@gmail.com', NULL, '2024-07-11 22:46:05.703', '2024-07-11 22:46:05.703');
+INSERT INTO public."Queries" ("queryID", "queryMessage", "queryPhone", "queryEmail", "forProduct", "createdAt", "updatedAt") VALUES('402431f2-552f-477a-8be4-c0d2a6afb309'::uuid, 'Message from Mr/Ms Soumyajit Sarkar:  hr;;p tptpo', '6543218907', 'soumyajit.9614@gmail.com', NULL, '2024-07-31 17:12:05.681', '2024-07-31 17:12:05.681');
+INSERT INTO public."Queries" ("queryID", "queryMessage", "queryPhone", "queryEmail", "forProduct", "createdAt", "updatedAt") VALUES('924ac2c8-13b2-40b7-ade8-be8812cce3d1'::uuid, 'Message from Mr/Ms sdfgf fjgkhk:  test', '1234567892', 'xcgc@gmail.com', NULL, '2024-08-22 13:59:42.752', '2024-08-22 13:59:42.752');
+INSERT INTO public."Queries" ("queryID", "queryMessage", "queryPhone", "queryEmail", "forProduct", "createdAt", "updatedAt") VALUES('191f6b3b-7a34-4073-b02c-59ef91e921fa'::uuid, 'Message from Mr/Ms Harshikesh  Dubey:  Testing feature.', '7980140023', 'harshibabu04@gmail.com', NULL, '2024-08-31 13:56:15.186', '2024-08-31 13:56:15.186');
+INSERT INTO public."Queries" ("queryID", "queryMessage", "queryPhone", "queryEmail", "forProduct", "createdAt", "updatedAt") VALUES('786d02e8-81d9-465a-a8a4-a13846c45634'::uuid, 'Message from Mr/Ms Saurabh Mishar:  Saurabh is testing', '7595823939', 'aimsaur@gmail.com', NULL, '2024-08-31 16:21:37.919', '2024-08-31 16:21:37.919');
+INSERT INTO public."Queries" ("queryID", "queryMessage", "queryPhone", "queryEmail", "forProduct", "createdAt", "updatedAt") VALUES('13b5c90a-6741-40a3-b443-4b2889983985'::uuid, 'Message from Mr/Ms whatsapp singh:  hi send me your catalogue.', '8910415186', 'ws@gmail.com', NULL, '2024-08-31 21:38:10.732', '2024-08-31 21:38:10.732');
+INSERT INTO public."Queries" ("queryID", "queryMessage", "queryPhone", "queryEmail", "forProduct", "createdAt", "updatedAt") VALUES('28a94869-5768-4a2b-ae72-5d6b4c41c92e'::uuid, 'atu seren: send me a catalogue.', '7980140018', 'as@yahoo.com', NULL, '2024-08-31 23:21:33.111', '2024-08-31 23:21:33.111');
+
+
+
+-- public."ProductsPictures" definition
+
+-- Drop table
+
+-- DROP TABLE public."ProductsPictures";
+
+CREATE TABLE public."ProductsPictures" (
+	id serial4 NOT NULL,
+	"productID" varchar(255) NOT NULL,
+	"productColor" varchar(255) NULL,
+	"productImageURL" varchar(255) NOT NULL,
+	"createdAt" timestamptz NOT NULL,
+	"updatedAt" timestamptz NOT NULL,
+	CONSTRAINT "ProductsPictures_pkey" PRIMARY KEY (id)
+);
+
+
+-- public."ProductsPictures" foreign keys
+
+ALTER TABLE public."ProductsPictures" ADD CONSTRAINT "ProductsPictures_productID_fkey" FOREIGN KEY ("productID") REFERENCES public."Products"("productID") ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSDELUXE', '#2E8B57', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643908/Movestone/Products_new/Deluxe/SEN_3682_uil821.jpg', '2024-06-29 13:20:25.501', '2024-06-29 13:20:25.501');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSDELUXE', '#C0C0C0', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643916/Movestone/Products_new/Deluxe/SEN_3645_xgjjov.jpg', '2024-06-29 13:20:25.501', '2024-06-29 13:20:25.501');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSECOFLEXI', '#FF0000', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643733/Movestone/Products_new/ECO%20FLEXI/SEN_3544_iubiuy.jpg', '2024-06-29 13:30:52.847', '2024-06-29 13:30:52.847');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSECOFLEXI', '#A9A9A9', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643721/Movestone/Products_new/ECO%20FLEXI/SEN_3571_xp3r11.jpg', '2024-06-29 13:30:52.847', '2024-06-29 13:30:52.847');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSSUPERPLUS', '#FF0000', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719642736/Movestone/Products_new/SUPER%20PLUS/SEN_3708_qnxvwk.jpg', '2024-06-29 13:42:38.037', '2024-06-29 13:42:38.037');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSSUPERPLUS', '#0000FF', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719642741/Movestone/Products_new/SUPER%20PLUS/SEN_3590_bt9dmd.jpg', '2024-06-29 13:42:38.037', '2024-06-29 13:42:38.037');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSMAXFLEXI', '#C0C0C0', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643790/Movestone/Products_new/MAX%20FLEXI/SEN_3512_ysp6by.jpg', '2024-06-29 13:50:14.363', '2024-06-29 13:50:14.363');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSMAXFLEXI', '#2E8B57', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643785/Movestone/Products_new/MAX%20FLEXI/SEN_3518_dhk50z.jpg', '2024-06-29 13:50:14.363', '2024-06-29 13:50:14.363');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSMAXFLEXI', '#FF0000', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643779/Movestone/Products_new/MAX%20FLEXI/SEN_3532_hojnb8.jpg', '2024-06-29 13:50:14.363', '2024-06-29 13:50:14.363');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSMAXFLEXI', '#0000FF', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643762/Movestone/Products_new/MAX%20FLEXI/SEN_3496_mi7hzc.jpg', '2024-06-29 13:50:14.363', '2024-06-29 13:50:14.363');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSECOSUPER', '#008000', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643699/Movestone/Products_new/ECO%20SS/SEN_3626_kg7ewp.jpg', '2024-06-29 14:10:46.549', '2024-06-29 14:10:46.549');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSECOSUPER', '#FFD700', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643647/Movestone/Products_new/ECO%20SS/SEN_3636_mj8x81.jpg', '2024-06-29 14:10:46.549', '2024-06-29 14:10:46.549');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSECOSUPER', '#0000FF', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643634/Movestone/Products_new/ECO%20SS/SEN_3558_yldapm.jpg', '2024-06-29 14:10:46.549', '2024-06-29 14:10:46.549');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSECOSUPER', '#0000FF', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643634/Movestone/Products_new/ECO%20SS/SEN_3558_yldapm.jpg', '2024-06-29 14:10:46.549', '2024-06-29 14:10:46.549');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSECOSUPER', '#A9A9A9', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643622/Movestone/Products_new/ECO%20SS/SEN_3579_hmwqsq.jpg', '2024-06-29 14:10:46.549', '2024-06-29 14:10:46.549');
+INSERT INTO public."ProductsPictures" ("productID", "productColor", "productImageURL", "createdAt", "updatedAt") VALUES('MSDELUXE', '#0000FF', 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643924/Movestone/Products_new/Deluxe/SEN_3671_xd1dzx.jpg', '2024-06-29 13:20:25.501', '2024-06-29 13:20:25.501');
+
+
+-- public."Products" definition
+
+-- Drop table
+
+-- DROP TABLE public."Products";
+
+CREATE TABLE public."Products" (
+	"productID" varchar(255) NOT NULL,
+	"productName" varchar(255) NOT NULL,
+	"colorOptions" varchar(255) NULL,
+	motor varchar(255) NULL,
+	controller varchar(255) NULL,
+	"tyreDiameter" varchar(255) NULL,
+	"tyreType" varchar(255) NULL,
+	"weightWithoutBattery" varchar(255) NULL,
+	"breakType" varchar(255) NULL,
+	roof varchar(255) NULL,
+	shocker varchar(255) NULL,
+	"seatingCapacity" varchar(255) NULL,
+	"bodyDimension" varchar(255) NULL,
+	charger varchar(255) NULL,
+	battery varchar(255) NULL,
+	rim varchar(255) NULL,
+	mileage varchar(255) NULL,
+	"sideCover" varchar(255) NULL,
+	wiper varchar(255) NULL,
+	converter varchar(255) NULL,
+	"headLight" varchar(255) NULL,
+	price varchar(255) NULL,
+	features varchar(255) NULL,
+	"imageURL" varchar(255) NULL,
+	curtain varchar(255) NULL,
+	"sideLookingGlass" varchar(255) NULL,
+	camera varchar(255) NULL,
+	"sensorLock" varchar(255) NULL,
+	"rearShocker" varchar(255) NULL,
+	"fireExtinguisher" varchar(255) NULL,
+	"footMat" varchar(255) NULL,
+	"fmSet" varchar(255) NULL,
+	"taxiLight" varchar(255) NULL,
+	fan varchar(255) NULL,
+	"toolKit" varchar(255) NULL,
+	"jackHandleSet" varchar(255) NULL,
+	"passengerHandle" varchar(255) NULL,
+	"stepnyCover" varchar(255) NULL,
+	"fogLight" varchar(255) NULL,
+	"createdAt" timestamptz NOT NULL,
+	"updatedAt" timestamptz NOT NULL,
+	category varchar NULL,
+	visible varchar NOT NULL DEFAULT 'Y'::character varying,
+	CONSTRAINT "Products_pkey" PRIMARY KEY ("productID")
+);
+
+
+
+
+INSERT INTO public."Products" ("productID", "productName", "colorOptions", motor, controller, "tyreDiameter", "tyreType", "weightWithoutBattery", "breakType", roof, shocker, "seatingCapacity", "bodyDimension", charger, battery, rim, mileage, "sideCover", wiper, converter, "headLight", price, features, "imageURL", curtain, "sideLookingGlass", camera, "sensorLock", "rearShocker", "fireExtinguisher", "footMat", "fmSet", "taxiLight", fan, "toolKit", "jackHandleSet", "passengerHandle", "stepnyCover", "fogLight", "createdAt", "updatedAt", category, visible) VALUES('MSDELUXE', 'MS DELUXE', '#0000FF,#2E8B57,#C0C0C0', '1000 WT / 1200 WT', '55 AH', '3.75-12', 'CEAT & RALSON & MRF', NULL, NULL, 'METAL ROOF
+', '43 MM', '4+1', NULL, 'AXIOM 18 A / MICROTECH 21A', 'EASTMAN & MUHAO', 'ALLOY RIM / IRON', '100-120', NULL, '12V-12"-RUBBER WIPER', '20Amp-48/60V', 'HALOGEN / LED', NULL, NULL, 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643916/Movestone/Products_new/Deluxe/SEN_3645_xgjjov.jpg', 'UV-Resistant Polyester Canvas', 'ROUND', 'YES', 'YES', 'HYDRAULIC', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', '2024-06-29 12:57:41.342', '2024-06-29 12:57:41.342', 'eRikshaw', 'Y');
+INSERT INTO public."Products" ("productID", "productName", "colorOptions", motor, controller, "tyreDiameter", "tyreType", "weightWithoutBattery", "breakType", roof, shocker, "seatingCapacity", "bodyDimension", charger, battery, rim, mileage, "sideCover", wiper, converter, "headLight", price, features, "imageURL", curtain, "sideLookingGlass", camera, "sensorLock", "rearShocker", "fireExtinguisher", "footMat", "fmSet", "taxiLight", fan, "toolKit", "jackHandleSet", "passengerHandle", "stepnyCover", "fogLight", "createdAt", "updatedAt", category, visible) VALUES('MSECOFLEXI', 'MS ECO FLEXI', '#FF0000,#A9A9A9', '1000 WT / 1200 WT', '55 AH', '3.75-12', 'CEAT & RALSON & MRF', NULL, NULL, 'METAL', '43 MM', '4+1', NULL, 'AXIOM 18 A / MICROTECH 21A', 'EASTMAN & MUHAO', 'ALLOY RIM / IRON', '100-120', NULL, '12V-12"-RUBBER WIPER', '20Amp-48/60V', 'HALOGEN / LED', NULL, NULL, 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643733/Movestone/Products_new/ECO%20FLEXI/SEN_3544_iubiuy.jpg', 'UV-Resistant Polyester Canvas', 'ROUND', 'NO', 'YES', 'HYDRAULIC', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', '2024-06-29 12:57:41.342', '2024-06-29 12:57:41.342', 'eRikshaw', 'Y');
+INSERT INTO public."Products" ("productID", "productName", "colorOptions", motor, controller, "tyreDiameter", "tyreType", "weightWithoutBattery", "breakType", roof, shocker, "seatingCapacity", "bodyDimension", charger, battery, rim, mileage, "sideCover", wiper, converter, "headLight", price, features, "imageURL", curtain, "sideLookingGlass", camera, "sensorLock", "rearShocker", "fireExtinguisher", "footMat", "fmSet", "taxiLight", fan, "toolKit", "jackHandleSet", "passengerHandle", "stepnyCover", "fogLight", "createdAt", "updatedAt", category, visible) VALUES('MSSUPERPLUS', 'MS SUPER PLUS', '#FF0000,#0000FF', '1000 WT / 1200 WT', '55 AH', '3.75-12', 'CEAT & RALSON & MRF', NULL, NULL, 'METAL ROOF
+', '43 MM', '4+1', NULL, 'AXIOM 18 A / MICROTECH 21A', 'EASTMAN & MUHAO', 'ALLOY RIM / IRON', '100-120', NULL, '12V-12"-RUBBER WIPER', '20Amp-48/60V', 'HALOGEN / LED', NULL, NULL, 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719642741/Movestone/Products_new/SUPER%20PLUS/SEN_3590_bt9dmd.jpg', 'UV-Resistant Polyester Canvas', 'ROUND', 'YES', 'YES', 'HYDRAULIC', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', '2024-06-29 12:57:41.342', '2024-06-29 12:57:41.342', 'eRikshaw', 'Y');
+INSERT INTO public."Products" ("productID", "productName", "colorOptions", motor, controller, "tyreDiameter", "tyreType", "weightWithoutBattery", "breakType", roof, shocker, "seatingCapacity", "bodyDimension", charger, battery, rim, mileage, "sideCover", wiper, converter, "headLight", price, features, "imageURL", curtain, "sideLookingGlass", camera, "sensorLock", "rearShocker", "fireExtinguisher", "footMat", "fmSet", "taxiLight", fan, "toolKit", "jackHandleSet", "passengerHandle", "stepnyCover", "fogLight", "createdAt", "updatedAt", category, visible) VALUES('MSMAXFLEXI', 'MS MAX FLEXI', '#C0C0C0,#2E8B57,#FF0000,#0000FF', '1000 WT / 1200 WT', '55 AH', '3.75-12', 'CEAT & RALSON & MRF', NULL, NULL, 'METAL ROOF
+', '43 MM', '4+1', NULL, 'AXIOM 18 A / MICROTECH 21A', 'EASTMAN & MUHAO', 'ALLOY RIM / IRON', '100-120', NULL, '12V-12"-RUBBER WIPER', '20Amp-48/60V', 'HALOGEN / LED', NULL, NULL, 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643779/Movestone/Products_new/MAX%20FLEXI/SEN_3532_hojnb8.jpg', 'UV-Resistant Polyester Canvas', 'ROUND', 'NO', 'YES', 'HYDRAULIC', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', '2024-06-29 12:57:41.342', '2024-06-29 12:57:41.342', 'eRikshaw', 'Y');
+INSERT INTO public."Products" ("productID", "productName", "colorOptions", motor, controller, "tyreDiameter", "tyreType", "weightWithoutBattery", "breakType", roof, shocker, "seatingCapacity", "bodyDimension", charger, battery, rim, mileage, "sideCover", wiper, converter, "headLight", price, features, "imageURL", curtain, "sideLookingGlass", camera, "sensorLock", "rearShocker", "fireExtinguisher", "footMat", "fmSet", "taxiLight", fan, "toolKit", "jackHandleSet", "passengerHandle", "stepnyCover", "fogLight", "createdAt", "updatedAt", category, visible) VALUES('MSECOSUPER', 'MS ECO SUPER (SS)', '#008000,#FFD700,#0000FF,#0000FF,#A9A9A9', '1000 WT / 1200 WT', '55 AH', '3.75-12', 'CEAT & RALSON & MRF', NULL, NULL, 'METAL', '43 MM', '4+1', NULL, 'AXIOM 18 A / MICROTECH 21A', 'EASTMAN & MUHAO', 'ALLOY RIM / IRON', '100-120', NULL, '12V-12"-RUBBER WIPER', '20Amp-48/60V', 'HALOGEN / LED', NULL, NULL, 'https://res.cloudinary.com/dyizlmke8/image/upload/v1719643622/Movestone/Products_new/ECO%20SS/SEN_3579_hmwqsq.jpg', 'UV-Resistant Polyester Canvas', 'ROUND', 'YES', 'YES', 'HYDRAULIC', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', 'YES', '2024-06-29 12:57:41.342', '2024-06-29 12:57:41.342', 'eRikshaw', 'Y');
+
+
+
+
+
+
+-- public."Emails" definition
+
+-- Drop table
+
+-- DROP TABLE public."Emails";
+
+CREATE TABLE public."Emails" (
+	id serial4 NOT NULL,
+	"emailID" varchar(255) NOT NULL,
+	"createdAt" timestamptz NOT NULL,
+	"updatedAt" timestamptz NOT NULL,
+	CONSTRAINT "Emails_emailID_key" UNIQUE ("emailID"),
+	CONSTRAINT "Emails_pkey" PRIMARY KEY (id)
+);
+
+
+INSERT INTO public."Emails" ("emailID", "createdAt", "updatedAt") VALUES('shubhayu@gmail.com', '2024-03-10 13:40:56.247', '2024-03-10 13:40:56.247');
+INSERT INTO public."Emails" ("emailID", "createdAt", "updatedAt") VALUES('dasguptasubhayu@gmail.com', '2024-03-10 13:42:35.259', '2024-03-10 13:42:35.259');
+INSERT INTO public."Emails" ("emailID", "createdAt", "updatedAt") VALUES('dasguptasubhayuz@gmail.com', '2024-03-10 13:53:44.472', '2024-03-10 13:53:44.472');

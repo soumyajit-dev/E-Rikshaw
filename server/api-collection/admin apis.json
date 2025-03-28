@@ -1,0 +1,110 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "admin-movestone-dev",
+    "collectionId": "681145a8-fb48-4da4-a694-8f6ac52064c7",
+    "dateExported": "2024-09-07T10:24:54.312Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "87e93b3d-0446-4d0c-be20-668819baa7b2",
+            "colId": "681145a8-fb48-4da4-a694-8f6ac52064c7",
+            "containerId": "",
+            "name": "update product",
+            "url": "localhost:5000/updateProduct",
+            "method": "PATCH",
+            "sortNum": 10000,
+            "created": "2024-09-06T16:46:11.642Z",
+            "modified": "2024-09-07T10:06:59.126Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productID\": \"IUI01\",\n    \"productName\": \"Sample Product\",\n    \"visible\": \"N\",\n    \"colorOptions\": \"PIC122\",\n    \"motor\": \"PIC122\",\n    \"controller\": \"PIC122\",\n    \"tyreDiameter\": \"PIC122\",\n    \"tyreType\": \"PIC122\",\n    \"weightWithoutBattery\": null,\n    \"breakType\": null,\n    \"roof\": null,\n    \"shocker\": null,\n    \"seatingCapacity\": \"PIC122\",\n    \"bodyDimension\": \"PIC122\",\n    \"charger\": \"PIC122\",\n    \"battery\": \"PIC122\",\n    \"rim\": null,\n    \"mileage\": \"PIC122\",\n    \"sideCover\": \"PIC122\",\n    \"wiper\": null,\n    \"converter\": \"PIC122\",\n    \"headLight\": \"PIC122\",\n    \"price\": null,\n    \"features\": \"PIC122\",\n    \"imageURL\": null,\n    \"curtain\": null,\n    \"sideLookingGlass\": null,\n    \"camera\": null,\n    \"sensorLock\": null,\n    \"rearShocker\": null,\n    \"fireExtinguisher\": null,\n    \"footMat\": null,\n    \"fmSet\": null,\n    \"taxiLight\": null,\n    \"fan\": null,\n    \"toolKit\": null,\n    \"jackHandleSet\": null,\n    \"passengerHandle\": \"YES\",\n    \"stepnyCover\": null,\n    \"fogLight\": null,\n    \"category\": \"eRikshaw\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "11302ed1-5740-4903-8039-d4b66d3fd917",
+            "colId": "681145a8-fb48-4da4-a694-8f6ac52064c7",
+            "containerId": "",
+            "name": "create product",
+            "url": "localhost:5000/createProduct",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-09-07T06:37:02.091Z",
+            "modified": "2024-09-07T06:43:03.077Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productID\":\"IUI01\",\n  \"productName\":\"Loakdj\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "291e808a-549d-4063-9e80-31b20ddbaf4c",
+            "colId": "681145a8-fb48-4da4-a694-8f6ac52064c7",
+            "containerId": "",
+            "name": "get all products",
+            "url": "localhost:5000/getAllProductsForAdmin",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-09-07T06:56:04.575Z",
+            "modified": "2024-09-07T06:56:36.718Z",
+            "headers": []
+        },
+        {
+            "_id": "45dc35a1-3590-4cbb-b2e6-94b86a9e309b",
+            "colId": "681145a8-fb48-4da4-a694-8f6ac52064c7",
+            "containerId": "",
+            "name": "Delete Product",
+            "url": "localhost:5000/deleteProduct",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-09-07T06:58:29.436Z",
+            "modified": "2024-09-07T07:23:54.454Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productID\":\"IUI01\",\n  \"secretKey\":\"PMP33\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "04288a96-416e-443d-bbaa-64b75ef69c3a",
+            "colId": "681145a8-fb48-4da4-a694-8f6ac52064c7",
+            "containerId": "",
+            "name": "upload-images",
+            "url": "localhost:5000/uploadFiles",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-09-07T09:00:25.217Z",
+            "modified": "2024-09-07T10:22:04.198Z",
+            "headers": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "productID",
+                        "value": "IUI01"
+                    },
+                    {
+                        "name": "productHexCode",
+                        "value": "#0000FF"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "photos",
+                        "value": "/Users/shubhayudasgupta/Desktop/Screenshot 2024-06-29 at 7.44.56 PM.png"
+                    },
+                    {
+                        "name": "photos",
+                        "value": "/Users/shubhayudasgupta/Downloads/about-banner (2).jpg"
+                    }
+                ]
+            }
+        }
+    ],
+    "ref": "l8qjEYIynEHlBGYNB9lOvqfNVhACbpFv3ajr7IZ5eqfw8gDt00EJ63EjTVk5AmHkkRObZlruvVb7tWjFfnKsDw"
+}

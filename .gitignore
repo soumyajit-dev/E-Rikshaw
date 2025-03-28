@@ -40,3 +40,8 @@
 # System files
 .DS_Store
 Thumbs.db
+
+# Server Files
+/server/.env
+/server/node_modules
+/server/.vscode

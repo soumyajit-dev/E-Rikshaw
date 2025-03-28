@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "56f577c8-c8ee-4da1-b290-0fc85cda0afa",
+		"name": "Rickshaw backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19898680"
+	},
+	"item": [
+		{
+			"name": "homeDetails:Config",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/getHomeDetails",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"getHomeDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productConfig",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"productID\":\"MSDELUXE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:{{port}}/getProductDetails",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"getProductDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get queries",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{jwtToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:{{port}}/getQuery",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"getQuery"
+					],
+					"query": [
+						{
+							"key": "authToken",
+							"value": "{{jwtToken}}}",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendQuery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"queryID\":\"97c8efb1-8eb3-4289-b6f7-b8f29a71032e\",\n    \"queryPhone\":\"7003420196\",\n  \"queryEmail\":\"dasguptasubhayu@gmail.com\",\n  \"queryMessage\":\"I want to buy good toots\"\n  \n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:{{port}}/createQuery",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"createQuery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Parse the response body to access its fields\r",
+							"let response = pm.response.json();\r",
+							"\r",
+							"// Check if there's no error and the response contains a jwtToken\r",
+							"if (!response.hasError && response.responsePayload && response.responsePayload.jwtToken) {\r",
+							"    // Set the jwtToken in the environment variable\r",
+							"    pm.environment.set(\"jwtToken\", \"Bearer \"+response.responsePayload.jwtToken);\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \n  \"userID\":\"Shubhayu\",\n  \"password\":\"Kolkata@1\"\n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:{{port}}/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createModel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/startAndCreateModels",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"startAndCreateModels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getQuery_filter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9,hi;q=0.8"
+					},
+					{
+						"key": "authorization",
+						"value": "{{jwtToken}}"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "h1",
+						"value": "v1"
+					},
+					{
+						"key": "origin",
+						"value": "https://www.movestone.in"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.movestone.in/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"filter\":\"today\"}"
+				},
+				"url": {
+					"raw": "localhost:{{port}}/getQuery",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"getQuery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productID\": \"IUI01\",\r\n  \"productName\": \"Sample Product\",\r\n  \"visible\": \"N\",\r\n  \"colorOptions\": \"PIC122\",\r\n  \"motor\": \"PIC122\",\r\n  \"controller\": \"PIC122\",\r\n  \"tyreDiameter\": \"PIC122\",\r\n  \"tyreType\": \"PIC122\",\r\n  \"weightWithoutBattery\": null,\r\n  \"breakType\": null,\r\n  \"roof\": null,\r\n  \"shocker\": null,\r\n  \"seatingCapacity\": \"PIC122\",\r\n  \"bodyDimension\": \"PIC122\",\r\n  \"charger\": \"PIC122\",\r\n  \"battery\": \"PIC122\",\r\n  \"rim\": null,\r\n  \"mileage\": \"PIC122\",\r\n  \"sideCover\": \"PIC122\",\r\n  \"wiper\": null,\r\n  \"converter\": \"PIC122\",\r\n  \"headLight\": \"PIC122\",\r\n  \"price\": null,\r\n  \"features\": \"PIC122\",\r\n  \"imageURL\": null,\r\n  \"curtain\": null,\r\n  \"sideLookingGlass\": null,\r\n  \"camera\": null,\r\n  \"sensorLock\": null,\r\n  \"rearShocker\": null,\r\n  \"fireExtinguisher\": null,\r\n  \"footMat\": null,\r\n  \"fmSet\": null,\r\n  \"taxiLight\": null,\r\n  \"fan\": null,\r\n  \"toolKit\": null,\r\n  \"jackHandleSet\": null,\r\n  \"passengerHandle\": \"YES\",\r\n  \"stepnyCover\": null,\r\n  \"fogLight\": null,\r\n  \"category\": \"eRikshaw\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:{{port}}/updateProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productID\": \"IUI01\",\r\n  \"productName\": \"Loakdj\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:{{port}}/createProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"createProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProductsForAdmin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{port}}/getAllProductsForAdmin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"getAllProductsForAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productID\": \"IUI01\",\r\n  \"secretKey\": \"PMP33\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:{{port}}/deleteProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"deleteProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uploadFiles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productID",
+							"value": "IUI01",
+							"type": "text"
+						},
+						{
+							"key": "productHexCode",
+							"value": "#0000FF",
+							"type": "text"
+						},
+						{
+							"key": "photos",
+							"type": "file",
+							"src": "/Users/shubhayudasgupta/Desktop/Screenshot 2024-06-29\\ at\\ 7.44.56\\ PM.png"
+						},
+						{
+							"key": "photos",
+							"type": "file",
+							"src": "/Users/shubhayudasgupta/Downloads/about-banner\\ \\(2\\).jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:{{port}}/uploadFiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"uploadFiles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
