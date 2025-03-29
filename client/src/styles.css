@@ -364,6 +364,7 @@ mat-header-cell:nth-child(5) {
 .product-footer-banner-text .phone-button .icon {
   padding-right: 10px;
   border-right: 2px solid #0046ff;
+  width: 30px;
 }
 
 .product-footer-banner-text .contact-button {
@@ -437,6 +438,10 @@ mat-header-cell:nth-child(5) {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header .header-menu .menu-btn i {
+  font-size: 18px;
 }
 
 .header .icon {
@@ -1051,8 +1056,6 @@ mat-header-cell:nth-child(5) {
 }
 
 .team-member {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   flex: 1 1 calc(20% - 40px); /* Adjust the width of each team member card */
   max-width: 220px;
@@ -1060,8 +1063,11 @@ mat-header-cell:nth-child(5) {
 }
 
 .team-member img {
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: auto;
+  height: 300px;
+  border-radius: 10px;
 }
 
 .team-member h3 {
@@ -3263,6 +3269,10 @@ select {
   .product-footer-banner-text .phone-button {
     padding: 6px 9px;
     font-size: 18px;
+
+    .icon {
+      width: 26px;
+    }
   }
 
   .product-footer-banner-text .contact-button {
@@ -3663,6 +3673,7 @@ select {
 
   .product-footer-banner-text .phone-button {
     padding: 0 12px;
+    font-size: 18px;
   }
 
   .product-footer-banner-text .contact-button {

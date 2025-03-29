@@ -13,11 +13,11 @@ export const CONSTANTS = {
   subscriptionText:
     'Help us reach you with the latest updates on our amazing products by providing us with your email.',
 
-  phoneNumber: '919831317367',
-  salesDepartmentNumber1: '9007704148',
-  salesDepartmentNumber2: '9831317367',
-  facebookID: 'https://facebook.com/e-rickshawservicespvtltd',
-  instagramID: 'https://instagram.com/e-rickshawevehicle',
+  phoneNumber: '(+91) 9831317347',
+  salesDepartmentNumber1: '(+91) 9007709803',
+  salesDepartmentNumber2: '(+91) 9831316372',
+  facebookID: 'https://facebook.com/e-rickshawpvtltd',
+  instagramID: 'https://instagram.com/e-rickshaw',
   addProduct: '/admin/add-product',
   productItems: [
     {
@@ -213,11 +213,11 @@ export const CONSTANTS = {
   },
 
   ABOUT_US: [
-    '“Move Stone” is a well known Brand of E-Rickshaw in India.',
-    'The Company is manufacturing E-Rickshaw since Aug’2020.',
+    '“E Rickshaw” is a well known Brand of electic rickshaw in India.',
+    'The Company is manufacturing electic rickshaw since Aug’2020.',
     'We are selling our products in West Bengal, Bihar, Assam, Tripura, Jharkhand, Uttar Pradesh, Chhattisgarh, Madhya Pradesh & Orissa, apart of mentioned states we are planning to supply shortly in Maharashtra & Rajasthan.',
     'We are an iCAT (International Centre for Automation Technology) approved E-rickshaw manufacturing company incorporated with the intention to address the robust growth potential of E-vehicle market in India.',
-    'We are manufacturing E-Rickshaw and planning enter in Electric Two-wheeler segment in coming days.',
+    'We are manufacturing electric rickshaw and planning enter in Electric Two-wheeler segment in coming days.',
     'Our manufacturing unit is situated at Utsav Park, Bhagbatipur, Chatur Bhujkathi, Sankrail, Howrah- 711313.',
     'We have an experienced team of engineers for post sales service.',
   ],
