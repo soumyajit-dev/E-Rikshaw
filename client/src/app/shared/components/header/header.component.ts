@@ -63,6 +63,8 @@ export class HeaderComponent implements OnInit {
         this.isVerticalScroll = false;
       }
     };
+
+    // convertCurrency('INR', 'USD', 20).then((data: number) => console.log(data));
   }
 
   get isUserLoggedIn(): boolean {

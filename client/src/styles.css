@@ -42,9 +42,9 @@
 .download-btn .btn {
   display: flex;
   align-items: center;
-  padding: 10px 15px; 
+  padding: 10px 15px;
   background-color: #007bff;
-  color: white; 
+  color: white;
   text-decoration: none;
   border: none;
   border-radius: 4px;
@@ -52,12 +52,12 @@
 }
 
 .back-arrow .btn mat-icon {
-  margin-right: 5px; 
+  margin-right: 5px;
 }
 
 .back-arrow .btn:hover,
 .download-btn .btn:hover {
-  background-color: #0056b3; 
+  background-color: #0056b3;
 } */
 
 * {
@@ -440,7 +440,7 @@ mat-header-cell:nth-child(5) {
 }
 
 .header .icon {
-  width: 100px;
+  width: 80px;
   height: 80px;
 }
 

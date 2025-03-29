@@ -1,11 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const dbConnection = require('./database/database');
 const homeRouter = require('./Routes/homeRoutes');
 const path = require('path');
-const { fileURLToPath } = require('url');
-const ProductsPictures = require('./database/models/productPics');
 require('dotenv').config();
 
 const PORT = process.env.PORT;

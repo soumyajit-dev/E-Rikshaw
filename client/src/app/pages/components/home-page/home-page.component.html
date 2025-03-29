@@ -41,22 +41,41 @@
 } @placeholder {
 <div id="abount-us-section">Why We</div>
 } @defer (on viewport) {
-<div *ngIf="productDetails?.products?.length > 0" class="vehicles" id="vehicles">
+<div
+  *ngIf="productDetails?.products?.length > 0"
+  class="vehicles"
+  id="vehicles"
+>
   <div class="featured-item">
     <div class="featured-item-heading">
       <h2 class="heading text-white text-uppercase">Our Products</h2>
 
       <div class="hex-container">
-        <button type="button" title="product-button-prev" id="product-button-prev" class="hexagon product-button-prev">
+        <button
+          type="button"
+          title="product-button-prev"
+          id="product-button-prev"
+          class="hexagon product-button-prev"
+        >
           <img src="{{ assetPath }}/arrow-yellow.png" alt="" />
         </button>
-        <button type="button" id="product-button-next" title="product-button-next" class="hexagon product-button-next">
+        <button
+          type="button"
+          id="product-button-next"
+          title="product-button-next"
+          class="hexagon product-button-next"
+        >
           <img src="{{ assetPath }}/arrow-yellow1.png" alt="" />
         </button>
       </div>
     </div>
 
-    <swiper-container fmSwiper [config]="vehicleConfig" init="false" class="vehicles-slider">
+    <swiper-container
+      fmSwiper
+      [config]="vehicleConfig"
+      init="false"
+      class="vehicles-slider"
+    >
       @for (eachProduct of productDetails.products; track $index) {
       <swiper-slide class="feature-box">
         <div class="box">
@@ -70,17 +89,35 @@
                 }
               </p>
             </div>
-            <button type="button" class="feature-btn btn" (click)="checkProduct(eachProduct?.productID)">
+            <button
+              type="button"
+              class="feature-btn btn"
+              (click)="checkProduct(eachProduct?.productID)"
+            >
               Details
             </button>
           </div>
           @if (eachProduct?.imageURL) {
-          <img [src]="eachProduct.imageURL" alt="image" class="vehicle-image" loading="lazy" />
+          <img
+            [src]="eachProduct.imageURL"
+            alt="image"
+            class="vehicle-image"
+            loading="lazy"
+          />
           } @else {
-          <img src="{{ assetPath }}/Image-not-available.jpg" alt="No-image" class="vehicle-image" loading="lazy" />
+          <img
+            src="{{ assetPath }}/Image-not-available.jpg"
+            alt="No-image"
+            class="vehicle-image"
+            loading="lazy"
+          />
           }
         </div>
-        <img src="{{ assetPath }}/line-featured.png" class="feature-box-pagination" alt="" />
+        <img
+          src="{{ assetPath }}/line-featured.png"
+          class="feature-box-pagination"
+          alt=""
+        />
       </swiper-slide>
       }
     </swiper-container>
@@ -103,14 +140,17 @@
       <tr>
         <td class="service-icon" width="20%">
           <div class="icon">
-            <img src="{{ assetPath }}/icon1.png" alt="Electric Rickshaw Sales" />
+            <img
+              src="{{ assetPath }}/icon1.png"
+              alt="Electric Rickshaw Sales"
+            />
           </div>
         </td>
         <td class="service-item">
           <div class="details">
             <h3>Electric Rickshaw Sales</h3>
             <p>
-              Visit Newest Movestone Outlet To See Latest In Technology And You
+              Visit Newest e-rickshaw Outlet To See Latest In Technology And You
               Can Put Enquiry Here, Our Sales Person will Call You.
             </p>
           </div>
@@ -119,7 +159,10 @@
       <tr>
         <td class="service-icon" width="20%">
           <div class="icon">
-            <img src="{{ assetPath }}/icon2.png" alt="Electric Rickshaw Sales" />
+            <img
+              src="{{ assetPath }}/icon2.png"
+              alt="Electric Rickshaw Sales"
+            />
           </div>
         </td>
         <td class="service-item">
@@ -135,7 +178,10 @@
       <tr>
         <td class="service-icon" width="20%">
           <div class="icon">
-            <img src="{{ assetPath }}/icon3.png" alt="Electric Rickshaw Sales" />
+            <img
+              src="{{ assetPath }}/icon3.png"
+              alt="Electric Rickshaw Sales"
+            />
           </div>
         </td>
         <td class="service-item">
@@ -151,7 +197,10 @@
       <tr>
         <td class="service-icon" width="20%">
           <div class="icon">
-            <img src="{{ assetPath }}/icon4.png" alt="Electric Rickshaw Sales" />
+            <img
+              src="{{ assetPath }}/icon4.png"
+              alt="Electric Rickshaw Sales"
+            />
           </div>
         </td>
         <td class="service-item">
@@ -167,7 +216,10 @@
       <tr>
         <td class="service-icon" width="20%">
           <div class="icon">
-            <img src="{{ assetPath }}/icon5.png" alt="Electric Rickshaw Sales" />
+            <img
+              src="{{ assetPath }}/icon5.png"
+              alt="Electric Rickshaw Sales"
+            />
           </div>
         </td>
         <td class="service-item">
@@ -184,7 +236,10 @@
       <tr>
         <td class="service-icon" width="20%">
           <div class="icon">
-            <img src="{{ assetPath }}/icon6.png" alt="Electric Rickshaw Sales" />
+            <img
+              src="{{ assetPath }}/icon6.png"
+              alt="Electric Rickshaw Sales"
+            />
           </div>
         </td>
         <td class="service-item">
@@ -222,7 +277,11 @@
 } @placeholder {
 <div id="team-section">Team Section</div>
 } @defer (on viewport) {
-<section id="reviews" class="testimonial" *ngIf="productDetails?.testimonials?.length > 0">
+<section
+  id="reviews"
+  class="testimonial"
+  *ngIf="productDetails?.testimonials?.length > 0"
+>
   <div class="testimonial-content">
     <div class="testimonial-text">
       <h4>Our Testimonial</h4>
@@ -244,7 +303,11 @@
         <swiper-slide class="swiper">
           <p>{{ eachReview.testimonial }}</p>
           <div class="client-info">
-            <img class="client-image" [src]="eachReview.imageURL" [alt]="eachReview.testimonialAuthor" />
+            <img
+              class="client-image"
+              [src]="eachReview.imageURL"
+              [alt]="eachReview.testimonialAuthor"
+            />
             <h3>{{ eachReview.testimonialAuthor }}</h3>
           </div>
         </swiper-slide>
@@ -265,43 +328,75 @@
       <div class="heading">Need a special deal?</div>
       <div class="heading">Contact us</div>
       <label class="input-field">
-        <input type="text" formControlName="queryName" placeholder="Your Name" name="name" id="name" required />
+        <input
+          type="text"
+          formControlName="queryName"
+          placeholder="Your Name"
+          name="name"
+          id="name"
+          required
+        />
         <div class="error-message">
-          <ng-container *ngIf="
+          <ng-container
+            *ngIf="
               queryForm.get('queryName')?.touched &&
               queryForm.get('queryName')?.hasError('required')
-            ">
+            "
+          >
             Name is required
           </ng-container>
         </div>
       </label>
 
       <label class="input-field">
-        <input formControlName="queryEmail" type="email" placeholder="Your Email" name="email" id="email-contact" required />
+        <input
+          formControlName="queryEmail"
+          type="email"
+          placeholder="Your Email"
+          name="email"
+          id="email-contact"
+          required
+        />
         <div class="error-message">
-          <ng-container *ngIf="
+          <ng-container
+            *ngIf="
               queryForm.get('queryEmail')?.touched &&
               queryForm.get('queryEmail')?.hasError('required')
-            ">
+            "
+          >
             Email is required
           </ng-container>
         </div>
       </label>
 
       <label class="input-field">
-        <input formControlName="queryPhone" type="number" name="number" placeholder="Your Number" id="number" required />
+        <input
+          formControlName="queryPhone"
+          type="number"
+          name="number"
+          placeholder="Your Number"
+          id="number"
+          required
+        />
         <div class="error-message">
-          <ng-container *ngIf="
+          <ng-container
+            *ngIf="
               queryForm.get('queryPhone')?.touched &&
               queryForm.get('queryPhone')?.hasError('required')
-            ">
+            "
+          >
             Number is required
           </ng-container>
         </div>
       </label>
 
       <label class="input-field">
-        <textarea formControlName="queryMessage" placeholder="Your Message (Optional)" name="message" id="message">
+        <textarea
+          formControlName="queryMessage"
+          placeholder="Your Message (Optional)"
+          name="message"
+          id="message"
+        >
         </textarea>
       </label>
 
@@ -313,9 +408,13 @@
   <div class="contact-view">
     <div class="map-section">
       <div class="map">
-        <iframe class="map"
+        <iframe
+          class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.115630953414!2d88.4353635!3d22.574778199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275e458febddf%3A0xa5fb7aaab4e3f4b2!2sImagine%20Tech%20Park%20-%20Genpact%20Kolkata%20Salt%20Lake%20Sector%20V!5e0!3m2!1sen!2sin!4v1709834636890!5m2!1sen!2sin"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
     <div class="about-section">
@@ -410,29 +509,59 @@
 
 <div id="home-footer" class="footer">
   <nav class="footer-section">
-    <a class="cursor-pointer" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/">
+    <a
+      class="cursor-pointer"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      routerLink="/"
+    >
       home
     </a>
     <div class="vertical"></div>
-    <a class="cursor-pointer" routerLink="/pages/about" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <a
+      class="cursor-pointer"
+      routerLink="/pages/about"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
       about
     </a>
     <div class="vertical"></div>
-    <a class="cursor-pointer" routerLink="/pages/products" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <a
+      class="cursor-pointer"
+      routerLink="/pages/products"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
       products
     </a>
     <div class="vertical"></div>
-    <a class="cursor-pointer" routerLink="/pages/services" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <a
+      class="cursor-pointer"
+      routerLink="/pages/services"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
       services
     </a>
     <div class="vertical"></div>
-    <a class="cursor-pointer" routerLink="/pages/reviews" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <a
+      class="cursor-pointer"
+      routerLink="/pages/reviews"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
       reviews
     </a>
     <div class="vertical"></div>
-    <a class="cursor-pointer" routerLink="/pages/contact" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <a
+      class="cursor-pointer"
+      routerLink="/pages/contact"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
       contact us
     </a>
   </nav>
-  <div class="footer-link">www.movestone.in</div>
+  <div class="footer-link">www.e-rickshaw.in</div>
 </div>

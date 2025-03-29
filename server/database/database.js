@@ -1,7 +1,6 @@
 const { Sequelize } = require('sequelize');
 
 require('dotenv').config();
-// const Products = require('./models/products');
 
 // Option 3: Passing parameters separately (other dialects)
 const dbConnection = new Sequelize(process.env.DATABASE, process.env.DBUSERNAME, process.env.DBPASSWORD, {

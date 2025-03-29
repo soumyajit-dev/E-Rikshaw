@@ -24,6 +24,7 @@
     "ngx-colors": "^3.6.0",
     "ngx-image-cropper": "^8.0.0",
     "rxjs": "^6.5.3",
+    "sdev-currency-converter": "^1.0.3",
     "swiper": "^11.0.5",
     "tslib": "2.6.2",
     "uuid": "^9.0.1",

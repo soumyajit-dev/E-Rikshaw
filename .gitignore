@@ -44,3 +44,4 @@ Thumbs.db
 # Server Files
 /server/.env
 /server/.vscode
+/server/database/data

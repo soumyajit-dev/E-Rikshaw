@@ -16,8 +16,8 @@ export const CONSTANTS = {
   phoneNumber: '919831317367',
   salesDepartmentNumber1: '9007704148',
   salesDepartmentNumber2: '9831317367',
-  facebookID: 'https://facebook.com/Movestoneservicespvtltd',
-  instagramID: 'https://instagram.com/movestoneevehicle',
+  facebookID: 'https://facebook.com/e-rickshawservicespvtltd',
+  instagramID: 'https://instagram.com/e-rickshawevehicle',
   addProduct: '/admin/add-product',
   productItems: [
     {
@@ -209,7 +209,7 @@ export const CONSTANTS = {
     visible: true,
     createdAt: true,
     updatedAt: true,
-    category: true
+    category: true,
   },
 
   ABOUT_US: [
