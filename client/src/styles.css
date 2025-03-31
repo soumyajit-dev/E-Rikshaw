@@ -1675,7 +1675,8 @@ select {
 .second-contact {
   .contact-number .contact-initials a {
     color: var(--white);
-    font-size: 19px;
+    font-size: 18px;
+    white-space: nowrap;
   }
 }
 
